@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Language Translator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #status {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: gray;
+        }
+        #translation {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #008000;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign Language Translator</h2>
+    <button id="startTranslation">Start Translation</button>
+    <p id="status">Waiting for video detection...</p>
+    <p id="translation"></p>  <!-- ✅ Added this to show translation output -->
+
+    <script src="popup.js"></script>
+</body>
+</html>
